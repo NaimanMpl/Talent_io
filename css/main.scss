@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #072045;
+    --secondary-color: #fbce70;
+    --light-primary-color: rgba(217,235,253,.2);
+    --dark-primary-color: #00132f;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.navbar {
+    background: var(--primary-color);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        height: 1em;
+    }
+
+    .mobile-cta {
+        height: 2.5em;
+    }
+
+    .mobile-signup-cta {
+        background: var(--secondary-color);
+        font-weight: bold;
+        border-radius: .2em;
+        margin-right: 2em;
+        padding: 1em;
+        z-index: 2;
+
+        &:hover {
+            background: #ffeba9;
+        }
+
+    }
+
+    nav.mobile-nav{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mobile-menu-exit {
+            z-index: 2;
+            display: none;
+        }
+        
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        flex-grow: 1;
+        border-left: red;
+        a {
+            color: var(--primary-color);
+            display: block;
+            padding: 2em; 
+            margin-left: 2em;
+            text-align: left;
+
+            &:hover {
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+.secondary-nav a {
+    border: 1px solid var(--primary-color);
+    border-radius: .3em;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+
+    &:hover {
+        background: var(--primary-color);
+        color: white;
+    }
+
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+section.hero {
+    padding: 5em 2em;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.left-col {
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        color: white;
+
+        span {
+            color: var(--secondary-color);
+        }
+
+    }
+
+    ul.work-contracts-list {
+        color: white;
+        margin-bottom: 3em;
+
+        li {
+            display: inline-block;
+            p {
+                background: rgba(217,235,253,.2);
+                padding: .5em .5em;
+                margin: .2em;
+                width: 5em;
+            }
+        }
+
+    }
+}
+
+.find-job-cta {
+    color: var(--primary-color);
+    font-weight: bold;
+    background: var(--secondary-color);
+    padding: 1em;
+    border-radius: .3em;
+
+    &:hover {
+        background: #ffeba9;
+    }
+
+}
+
+.free-roles-title {
+    margin-top: 3em;
+    font-size: 1em;
+    color: var(--secondary-color);
+}
+
+.roles-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -1px;
+    }
+
+    li {
+        flex-grow: 1;
+        flex-basis: auto;
+        margin: .25em 0;
+        padding: 0 1em;
+        text-align: center;
+        border-left: 1px solid var(--secondary-color);
+        color: white;
+    }
+
+}
+
+.offer-job {
+    padding: 5em 2em;
+    background: #00132f;
+    color: white;
+    margin: 0px auto;
+    .container {
+        .cdi-section-bg {
+            height: 20em;
+        }
+        span {
+            color: var(--secondary-color);
+        }
+        ul {
+            li {
+                margin-top: 5em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 1em;
+                a {
+                    text-align: center;
+                    border: 1px solid var(--light-primary-color);
+                    background: var(--primary-color);
+                    padding: 2em .5em;
+                    color: white;
+                    border-radius: .3em;
+                    padding: 1em 1em;
+                }
+            }
+        }
+        .cdi-section-cta {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-right: 1em;
+            li {
+
+                a {
+                    font-weight: bold;
+                    border-radius: .3em;
+                }
+
+                .get-offer-cta {
+                    background: var(--secondary-color);
+                    color: var(--primary-color);
+                    padding: 1em 2em;
+                }
+
+                .more-informations-cta {
+                    border: 1px solid var(--light-primary-color);
+                    background: #000e27;
+                    padding: 1em 2em;
+                }
+            }
+        }
+    }
+    .card {
+        border: 1px solid gray;
+        background: var(--primary-color);
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 1em;
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        img {
+            height: 4em;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 1.5em;
+        }
+
+        p {
+            margin-left: 1em;
+        }
+
+        p.contract {
+            background: var(--light-primary-color);
+            width: 3em;
+            text-align: center;
+        }
+
+    }
+}
+
+section.reviews {
+    padding: 5em 2em;
+    background: white;
+    .container {
+        .review-cards {
+            img {
+                height: 1em;
+            }
+            .card {
+                display: flex;
+                justify-content: space-between;
+            }
+            h4 {
+                color: var(--primary-color);
+                font-weight: 400;
+                font-size: 1.5em;
+            }
+            h5 {
+                text-transform: uppercase;
+                color: grey;
+                font-weight: 400;
+            }
+            p {
+                color: var(--primary-color);
+                font-size: 2em;
+            }
+            .review-author {
+                font-size: 1em;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

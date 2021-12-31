@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #072045;
+  --secondary-color: #fbce70;
+  --light-primary-color: rgba(217,235,253,.2);
+  --dark-primary-color: #00132f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo {
+  height: 1em;
+}
+
+.navbar .mobile-cta {
+  height: 2.5em;
+}
+
+.navbar .mobile-signup-cta {
+  background: var(--secondary-color);
+  font-weight: bold;
+  border-radius: .2em;
+  margin-right: 2em;
+  padding: 1em;
+  z-index: 2;
+}
+
+.navbar .mobile-signup-cta:hover {
+  background: #ffeba9;
+}
+
+.navbar nav.mobile-nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .mobile-menu-exit {
+  z-index: 2;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  padding: 1em;
+  height: 100vh;
+  width: 100%;
+  background: white;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-left: red;
+}
+
+nav li a {
+  color: var(--primary-color);
+  display: block;
+  padding: 2em;
+  margin-left: 2em;
+  text-align: left;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.secondary-nav a {
+  border: 1px solid var(--primary-color);
+  border-radius: .3em;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.secondary-nav a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+section.hero {
+  padding: 5em 2em;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: white;
+}
+
+.left-col h1 span {
+  color: var(--secondary-color);
+}
+
+.left-col ul.work-contracts-list {
+  color: white;
+  margin-bottom: 3em;
+}
+
+.left-col ul.work-contracts-list li {
+  display: inline-block;
+}
+
+.left-col ul.work-contracts-list li p {
+  background: rgba(217, 235, 253, 0.2);
+  padding: .5em .5em;
+  margin: .2em;
+  width: 5em;
+}
+
+.find-job-cta {
+  color: var(--primary-color);
+  font-weight: bold;
+  background: var(--secondary-color);
+  padding: 1em;
+  border-radius: .3em;
+}
+
+.find-job-cta:hover {
+  background: #ffeba9;
+}
+
+.free-roles-title {
+  margin-top: 3em;
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+
+.roles-list {
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.roles-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -1px;
+}
+
+.roles-list li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  text-align: center;
+  border-left: 1px solid var(--secondary-color);
+  color: white;
+}
+
+.offer-job {
+  padding: 5em 2em;
+  background: #00132f;
+  color: white;
+  margin: 0px auto;
+}
+
+.offer-job .container .cdi-section-bg {
+  height: 20em;
+}
+
+.offer-job .container span {
+  color: var(--secondary-color);
+}
+
+.offer-job .container ul li {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em;
+}
+
+.offer-job .container ul li a {
+  text-align: center;
+  border: 1px solid var(--light-primary-color);
+  background: var(--primary-color);
+  padding: 2em .5em;
+  color: white;
+  border-radius: .3em;
+  padding: 1em 1em;
+}
+
+.offer-job .container .cdi-section-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 1em;
+}
+
+.offer-job .container .cdi-section-cta li a {
+  font-weight: bold;
+  border-radius: .3em;
+}
+
+.offer-job .container .cdi-section-cta li .get-offer-cta {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1em 2em;
+}
+
+.offer-job .container .cdi-section-cta li .more-informations-cta {
+  border: 1px solid var(--light-primary-color);
+  background: #000e27;
+  padding: 1em 2em;
+}
+
+.offer-job .card {
+  border: 1px solid gray;
+  background: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 1em;
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.offer-job .card img {
+  height: 4em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 1.5em;
+}
+
+.offer-job .card p {
+  margin-left: 1em;
+}
+
+.offer-job .card p.contract {
+  background: var(--light-primary-color);
+  width: 3em;
+  text-align: center;
+}
+
+section.reviews {
+  padding: 5em 2em;
+  background: white;
+}
+
+section.reviews .container .review-cards img {
+  height: 1em;
+}
+
+section.reviews .container .review-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.reviews .container .review-cards h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+section.reviews .container .review-cards h5 {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 400;
+}
+
+section.reviews .container .review-cards p {
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
+section.reviews .container .review-cards .review-author {
+  font-size: 1em;
+}
+
+section.reviews .container .review-cards .review-author span {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
